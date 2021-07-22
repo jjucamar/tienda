@@ -15,15 +15,18 @@ class CreateColorSizeTable extends Migration
     {
         Schema::create('color_size', function (Blueprint $table) {
             $table->id();
+            
+            //Campos requeridos
+            $table->integer('quantity');
 
+            //Campos llaves foraneas
             $table->unsignedBigInteger('color_id');
-            $table->foreign('color_id')->references('id')->on('colors');
-
             $table->unsignedBigInteger('size_id');
+
+            //Restricciones de las llaves foraneas
+            $table->foreign('color_id')->references('id')->on('colors');
             $table->foreign('size_id')->references('id')->on('sizes');
 
-            $table->integer('quantity');
-            
             $table->timestamps();
         });
     }

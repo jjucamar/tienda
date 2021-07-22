@@ -9,6 +9,7 @@ class Brand extends Model
 {
     use HasFactory;
 
+    //Habilitar Asignación masiva
     protected $fillable = ['name'];
 
     //Relacion uno a muchos

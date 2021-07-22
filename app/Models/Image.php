@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Image extends Model
 {
     use HasFactory;
-
+    
+   //Habilitar Asignación masiva
     protected $fillable = ['url', 'imageable_id', 'imageable_type'];
 
     public function imageable(){

@@ -9,7 +9,7 @@ class Subcategory extends Model
 {
     use HasFactory;
 
-     
+    //Habilitar Asignación masiva
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     //Relacion uno a muchos

@@ -25,6 +25,7 @@ class CreateProductsTable extends Migration
 
             $table->float('price');
 
+            // para que acepte valores null le pasamos el metodo nullable()
             $table->integer('quantity')->nullable();
 
             // Campo que generamos mediante ktes definidas en el modelo 

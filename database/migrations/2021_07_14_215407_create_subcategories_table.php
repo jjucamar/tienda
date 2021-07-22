@@ -22,7 +22,10 @@ class CreateSubcategoriesTable extends Migration
 
             $table->string('slug');
 
-            // campos por defecto sera false
+            /**
+             * campos por defecto sera false con esto logramos que si creeamos un nuevo registro
+             * no especificamos el color ni el size por defecto no necesitan estos campos
+             */
             $table->boolean('color')->default(false);
             $table->boolean('size')->default(false);
 

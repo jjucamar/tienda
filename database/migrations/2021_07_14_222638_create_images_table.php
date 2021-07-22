@@ -16,18 +16,17 @@ class CreateImagesTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
 
-            
+            //Campos Requeridos
             $table->string('url');
             // campos necesarios para que sea polimorfica
 
            /* * el campo unsignedBigInteger 
-* debe tener el nombre de la tabla en singular y le damos la terminación able 
-* seguido de "_id"
-* y otro de tipo string debe tener el nombre de la tabla en singular y le damos 
-* la terminación able seguido de "_type"
-* 
-*/
-
+            * debe tener el nombre de la tabla en singular y le damos la terminación able 
+            * seguido de "_id"
+            * y otro de tipo string debe tener el nombre de la tabla en singular y le damos 
+            * la terminación able seguido de "_type"
+            * 
+            */
             $table->unsignedBigInteger('imageable_id');
             $table->string('imageable_type');
 

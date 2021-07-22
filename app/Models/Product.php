@@ -9,10 +9,11 @@ class Product extends Model
 {
     use HasFactory;
 
-     
+     // Creación de las KTES para el llenado de los datos
     const BORRADOR = 1;
     const PUBLICADO = 2;
 
+    //Habilitar Asignación masiva
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     //accesores

@@ -9,6 +9,7 @@ class Color extends Model
 {
     use HasFactory;
 
+    //Habilitar Asignación masiva
     protected $fillable = ['name'];
 
     //Relacion muchos a muchos

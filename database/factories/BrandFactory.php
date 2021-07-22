@@ -22,7 +22,9 @@ class BrandFactory extends Factory
     public function definition()
     {
         return [
-            //
+            // le pedimos a faker que complete el campo 'name' con una palabra
+            'name' => $this->faker->word()
+            // luego le pedimos que se creen estas marcas dentro del CategorySeeder
         ];
     }
 }

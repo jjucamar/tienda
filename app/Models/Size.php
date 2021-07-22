@@ -9,7 +9,7 @@ class Size extends Model
 {
     use HasFactory;
 
-    
+    //Habilitar Asignación masiva
     protected $fillable = ['name', 'product_id'];
 
     //Relaion uno a muchos inversa

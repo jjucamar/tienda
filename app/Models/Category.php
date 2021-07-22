@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
-
+    
+   //Habilitar Asignación masiva
     protected $fillable = ['name', 'slug', 'image', 'icon'];
 
     //Relacion uno a muchos
